@@ -18,6 +18,7 @@
 		B7419777238DE99E00B63E8A /* RouteHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7419776238DE99E00B63E8A /* RouteHeader.swift */; };
 		B741977A238E03EF00B63E8A /* PlacesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7419779238E03EF00B63E8A /* PlacesController.swift */; };
 		B741977C2391BA8000B63E8A /* CustomCallout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B741977B2391BA8000B63E8A /* CustomCallout.swift */; };
+		B74AF3AA2395611B001871C1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74AF3A92395611B001871C1 /* Constants.swift */; };
 		B798EDF82389CD7400B1F5E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B798EDF72389CD7400B1F5E1 /* AppDelegate.swift */; };
 		B798EDFA2389CD7400B1F5E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B798EDF92389CD7400B1F5E1 /* SceneDelegate.swift */; };
 		B798EDFC2389CD7400B1F5E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B798EDFB2389CD7400B1F5E1 /* ContentView.swift */; };
@@ -38,6 +39,7 @@
 		B7419776238DE99E00B63E8A /* RouteHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteHeader.swift; sourceTree = "<group>"; };
 		B7419779238E03EF00B63E8A /* PlacesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesController.swift; sourceTree = "<group>"; };
 		B741977B2391BA8000B63E8A /* CustomCallout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCallout.swift; sourceTree = "<group>"; };
+		B74AF3A92395611B001871C1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B798EDF42389CD7400B1F5E1 /* MapsDirectionGooglePlaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapsDirectionGooglePlaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B798EDF72389CD7400B1F5E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B798EDF92389CD7400B1F5E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				B798EE022389CD8000B1F5E1 /* LaunchScreen.storyboard */,
 				B798EE052389CD8000B1F5E1 /* Info.plist */,
 				B798EDFF2389CD8000B1F5E1 /* Preview Content */,
+				B74AF3A92395611B001871C1 /* Constants.swift */,
 			);
 			path = MapsDirectionGooglePlaces;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				B798EDFC2389CD7400B1F5E1 /* ContentView.swift in Sources */,
 				B741977C2391BA8000B63E8A /* CustomCallout.swift in Sources */,
 				B7419770238DAFDE00B63E8A /* LocationSearchController.swift in Sources */,
+				B74AF3AA2395611B001871C1 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

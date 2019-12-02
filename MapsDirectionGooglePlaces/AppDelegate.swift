@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        GMSPlacesClient.provideAPIKey("AIzaSyDov5a0PxuNVhCK3M6TU6SLSJDbwtEnVO4")
+        GMSPlacesClient.provideAPIKey(Constants.googlePlacesAPIKey)
         return true
     }
 
