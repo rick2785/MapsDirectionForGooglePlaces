@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import MapKit
 
 class RouteHeader: UICollectionReusableView {
     let nameLabel = UILabel(text: "Route Name", font: .systemFont(ofSize: 16))
@@ -25,6 +26,28 @@ class RouteHeader: UICollectionReusableView {
         
         nameLabel.attributedText = generateAttributedString(title: "Route", description: "US 101S")
         distanceLabel.attributedText = generateAttributedString(title: "Distance", description: "13.14 mi")
+    }
+    
+    func setupHeaderInformation(route: MKRoute) {
+        nameLabel.attributedText = generateAttributedString(title: "Route", description: route.name)
+        
+        let milesDistance = route.distance * 0.00062137
+        
+        let milesString = String(format: "%.2f mi", milesDistance)
+        
+        distanceLabel.attributedText = generateAttributedString(title: "Distance", description: milesString)
+        
+        var timeString = ""
+        if route.expectedTravelTime > 3600 {
+            let h = Int(route.expectedTravelTime / 60 / 60)
+            let m = Int((route.expectedTravelTime.truncatingRemainder(dividingBy: 60 * 60)) / 60)
+            timeString = String(format: "%d hr %d min", h, m)
+        } else {
+            let time = Int(route.expectedTravelTime / 60)
+            timeString = String(format: "%d min", time)
+        }
+
+        estimatedTimeLabel.attributedText = generateAttributedString(title: "Est Time", description: timeString)
     }
     
     func generateAttributedString(title: String, description: String) -> NSAttributedString {
